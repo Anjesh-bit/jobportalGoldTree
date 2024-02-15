@@ -1,8 +1,8 @@
 import { Button } from "antd";
 
-const AntdButton = ({ classNames, children, type, handleOnClick }) => {
+const AntdButton = ({ classNames, children, type, onClick }) => {
   const handleOnClickButton = (e) => {
-    handleOnClick(e);
+    onClick(e);
   };
   return (
     <Button type={type} className={classNames} onClick={handleOnClickButton}>

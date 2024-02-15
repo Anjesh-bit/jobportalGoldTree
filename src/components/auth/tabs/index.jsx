@@ -1,4 +1,5 @@
 import AntdTabs from "../../../common/AntdTabs";
+import DynamicRegistration from "../DynamicRegistration";
 import EmployeeLogin from "../signIn/employer";
 import JobSeekerLogin from "../signIn/jobSeeker";
 
@@ -23,12 +24,12 @@ const tabItems = [
     tabItems: [
       {
         label: "Job Seeker",
-        children: "",
+        children: <DynamicRegistration visibleTabs isEmployeeTabItems />,
         key: "job_seeker",
       },
       {
         label: "Employer",
-        children: "",
+        children: <DynamicRegistration visibleTabs />,
         key: "employee",
       },
     ],
@@ -36,11 +37,12 @@ const tabItems = [
 ];
 
 const DynamicTabs = ({ dataKey }) => {
+  const handleOnChangeTabs = (keys) => {};
   const founItems = tabItems?.find((items) => items.key === dataKey);
   const tabItemsFound = founItems?.tabItems;
   return (
     <div>
-      <AntdTabs items={tabItemsFound} centered />
+      <AntdTabs items={tabItemsFound} onChange={handleOnChangeTabs} centered />
     </div>
   );
 };
