@@ -1,4 +1,4 @@
-import DynamicTitle from "../DynamicTitle";
+import DynamicTitle from "../../DynamicTitle";
 import { dummyDataFeatured } from "../Data";
 import AntdCards from "../../../common/AntdCards";
 import AntdButton from "../../../common/AntdButtons";
@@ -18,7 +18,7 @@ const FeaturedJobs = () => {
         {dummyDataFeatured?.map((items, index) => (
           <AntdCards
             className={
-              "lg:col-span-4 md:col-span-12 col-span-12 p-4 bg-[#F5F5F5] shadow-md"
+              "lg:col-span-4 md:col-span-12 col-span-12 p-4 bg-[#f5f5f5] shadow-md"
             }
             key={index}
           >

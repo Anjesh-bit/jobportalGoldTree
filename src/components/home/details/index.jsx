@@ -1,5 +1,5 @@
 import AntdSearch from "../../../common/AntdSearch";
-import DynamicTitle from "../DynamicTitle";
+import DynamicTitle from "../../DynamicTitle";
 
 const DetailedComponent = () => {
   return (

@@ -1,7 +1,7 @@
 import AntdButton from "../../../common/AntdButtons";
 import AntdCards from "../../../common/AntdCards";
 import { dummyDataCompanyList } from "../Data";
-import DynamicTitle from "../DynamicTitle";
+import DynamicTitle from "../../DynamicTitle";
 
 const CompanyList = () => {
   return (

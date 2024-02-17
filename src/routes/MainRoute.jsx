@@ -13,6 +13,8 @@ import PostJobs from "../components/dashboard/employee/posts";
 import Profile from "../components/dashboard/employee/profile";
 import ShorlistCandidate from "../components/dashboard/employee/shortListCandidates";
 import UploadPhoto from "../components/dashboard/employee/uploadphoto";
+import ChangePassword from "../components/dashboard/ChangePassword";
+import DeactivateAccount from "../components/dashboard/DeactivateAccount";
 
 const homeRoutes = {
   path: "/",
@@ -71,6 +73,14 @@ const employeeRoutes = {
     {
       path: "upload-photo",
       element: <UploadPhoto />,
+    },
+    {
+      path: "change-password",
+      element: <ChangePassword />,
+    },
+    {
+      path: "deactivate-account",
+      element: <DeactivateAccount />,
     },
   ],
 };

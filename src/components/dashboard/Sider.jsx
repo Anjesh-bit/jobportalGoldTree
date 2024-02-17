@@ -69,7 +69,7 @@ const items = [
   ),
 ];
 
-const DashBoardSider = ({ keys, content }) => {
+const DashBoardSider = () => {
   const [collapsed, setCollapsed] = useState(false);
   const [selectedKeys, setSelectedKeys] = useState("");
   const {
@@ -90,6 +90,7 @@ const DashBoardSider = ({ keys, content }) => {
         collapsible
         collapsed={collapsed}
         onCollapse={(value) => setCollapsed(value)}
+        className="!bg-[#242021]"
       >
         <div className="demo-logo-vertical" />
         <Menu
@@ -97,6 +98,7 @@ const DashBoardSider = ({ keys, content }) => {
           defaultSelectedKeys={["1"]}
           mode="inline"
           onSelect={(selectedItem) => handleMenuSelect(selectedItem)}
+          className="bg-[#242021]"
         >
           {items.map((item) => (
             <Menu.Item key={item.key} icon={item.icon}>
@@ -114,7 +116,7 @@ const DashBoardSider = ({ keys, content }) => {
         />
         <Content
           style={{
-            margin: "0 16px",
+            margin: "2rem 6rem",
           }}
         >
           <Outlet />

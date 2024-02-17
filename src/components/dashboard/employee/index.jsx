@@ -4,14 +4,15 @@ import AntdCards from "../../../common/AntdCards";
 
 const EmployeeDashBoard = () => {
   return (
-    <div className="grid grid-cols-12 w-full gap-2">
+    <div className="grid grid-cols-12 w-full gap-2 py-4">
       {dashBoardData.map((item) => (
         <AntdCards
           key={item.key}
           className={
-            "lg:col-span-4 md:col-span-12 col-span-12 p-4 bg-[#F5F5F5]"
+            "lg:col-span-4 md:col-span-12 col-span-12 p-4 bg-[#ffffff] flex flex-col items-center justify-center min-h-60"
           }
         >
+          <div className="text-lg font-medium">{item.header}</div>
           {item.key === "cvs" && Array.isArray(item.subHeader) && (
             <div>
               {item.subHeader.map((subItem) => (
@@ -30,7 +31,7 @@ const EmployeeDashBoard = () => {
               ))}
             </div>
           )}
-          <div>{item.header}</div>
+
           {!Array.isArray(item.subHeader) && <div>{item.subHeader}</div>}
         </AntdCards>
       ))}

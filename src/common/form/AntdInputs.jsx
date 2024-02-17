@@ -75,7 +75,7 @@ const Inputs = (props) => {
     <ConfigProvider
       theme={{
         token: {
-          colorBgContainer: "#F5F5F5",
+          colorBgContainer: "#ffffff",
         },
         components: {
           Input: {
@@ -116,14 +116,10 @@ const Inputs = (props) => {
           }}
           onPressEnter={handelOnPressEnter}
           readOnly={props.readOnly}
-          bordered={props.bordered ? false : true}
           onClick={handelClick}
           maxLength={props.maxlength}
           value={props.value}
           disabled={props.disabled}
-          addonAfter={props.addonAfter}
-          addonBefore={props.addonBefore}
-          addonBg={props.addonBg}
           onChange={props.handleChange}
           className={`${props.className}`}
           ref={props.ref}
