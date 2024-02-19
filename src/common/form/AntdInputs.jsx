@@ -91,7 +91,7 @@ const Inputs = (props) => {
     >
       {props.Label && (
         <div
-          className={`whitespace-nowrap text-sm font-medium
+          className={`whitespace-nowrap text-sm font-medium 
           } ${
             props.required
               ? "after:text-[#dc4446] after:content-['*'] after:font-[400] after:ml-1 after:text-[16px]"

@@ -9,7 +9,7 @@ const DetailedComponent = () => {
           Find Your Dream Job That Suits With Exciting Opportunities
         </DynamicTitle>
         <div>
-          <p className="text-lg">
+          <p className="text-md font-NORMAL">
             Embark on a journey towards your dream career, your ultimate job
             finding companion. We have created the platform that connects
             talented individuals with exciting opportunities.

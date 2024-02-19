@@ -1,11 +1,12 @@
 import AntdFooter from "../common/AntdFooter";
 import AntdHeader from "../common/AntdHeader";
-import DashBoardSider from "../components/dashboard/Sider";
+import EmployeeMainPage from "../components/dashboard/employee";
+
 const EmployeeDashboardLayout = () => {
   return (
     <div>
       <AntdHeader />
-      <DashBoardSider />
+      <EmployeeMainPage />
       <AntdFooter />
     </div>
   );

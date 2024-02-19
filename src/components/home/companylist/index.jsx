@@ -11,8 +11,8 @@ const CompanyList = () => {
           <DynamicTitle classNames={"font-bold text-4xl"}>
             Choose Your Dream Companies
           </DynamicTitle>
-          <div className="w-[60%] text-lg">
-            start your journey towards the job search by exploring the top
+          <div className="w-[60%] text-md font-normal">
+            Start your journey towards the job search by exploring the top
             companies around nepal and also opportunities to meet the top notch
             mentors.
           </div>
@@ -29,24 +29,24 @@ const CompanyList = () => {
         {dummyDataCompanyList?.map((items, index) => (
           <AntdCards
             className={
-              "lg:col-span-4 md:col-span-12 col-span-12 p-4 bg-[#F5F5F5]"
+              "lg:col-span-4 md:col-span-12 col-span-12 p-4 bg-[#ffffff] shadow-md"
             }
             key={index}
           >
             <div className="flex flex-col gap-2">
               <div className="text-lg font-medium">{items.company}</div>
-              <div>{items.description}</div>
+              <div className="text-sm font-normal">{items.description}</div>
               <div className="flex gap-2">
                 <AntdButton
                   classNames={
-                    "bg-[#D5D5D5] !border-none text-[#00000] px-7 h-8"
+                    "bg-[#f5f5f5] !border-none text-[#00000] px-7 h-8"
                   }
                 >
                   Full Time
                 </AntdButton>
                 <AntdButton
                   classNames={
-                    "bg-[#D5D5D5] !border-none text-[#00000] px-7 h-8"
+                    "bg-[#f5f5f5] !border-none text-[#00000] px-7 h-8"
                   }
                 >
                   Remote

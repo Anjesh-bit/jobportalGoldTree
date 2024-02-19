@@ -28,7 +28,7 @@ const PrimaryContactInfo = () => {
         <div className="lg:col-span-4 md:col-span-6 col-span-12">
           <Selects className="w-full" Label="Company Location" />
         </div>
-        <div className="lg:col-span-12">
+        <div className="lg:col-span-12 col-span-12">
           <CkEditors Label={"Company Description:"} />
         </div>
         <div className="lg:col-span-6 md:col-span-6 col-span-12">

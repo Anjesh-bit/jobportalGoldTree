@@ -2,7 +2,7 @@ import React from "react";
 import { Layout, Menu } from "antd";
 import AntdButton from "./AntdButtons";
 import PopOver from "../components/auth/PopOver";
-import DynamicTabs from "../components/auth/tabs";
+import DynamicTabs from "../components/auth";
 
 const { Header } = Layout;
 
@@ -14,7 +14,7 @@ const AntdHeader = () => {
         <div>
           <Menu
             mode="horizontal"
-            className="bg-yellow-400 bg-opacity-10 text-md"
+            className="bg-yellow-400 bg-opacity-10 text-md font-semibold"
           >
             <Menu.Item key="1">Find Jobs</Menu.Item>
             <Menu.Item key="2">Companies</Menu.Item>

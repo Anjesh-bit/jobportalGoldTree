@@ -1,7 +1,7 @@
-import AntdTabs from "../../../common/AntdTabs";
-import DynamicRegistration from "../DynamicRegistration";
-import EmployeeLogin from "../signIn/employer";
-import JobSeekerLogin from "../signIn/jobSeeker";
+import AntdTabs from "../../common/AntdTabs";
+import DynamicRegistration from "./DynamicRegistration";
+import EmployeeLogin from "./signIn/employer";
+import JobSeekerLogin from "./signIn/jobSeeker";
 
 const tabItems = [
   {

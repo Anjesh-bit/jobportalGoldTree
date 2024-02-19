@@ -1,6 +1,7 @@
 import { Descriptions } from "antd";
 import { AntRadio } from "../../common/AntdRadioGroup";
 import AntdButton from "../../common/AntdButtons";
+
 const applyOnlineOptions = [
   {
     option: "This is temporary. I'll be back.",

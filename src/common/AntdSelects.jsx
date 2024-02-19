@@ -22,12 +22,9 @@ export const Selects = (props) => {
   return (
     <ConfigProvider
       theme={{
-        token: {
-          controlHeight: parseInt(props.controlHeight) || 30,
-        },
         components: {
           Select: {
-            optionHeight: 32,
+            optionHeight: 30,
             colorBorder: "#242021",
             optionPadding: "5px 12px",
             paddingSM: 8,
@@ -36,7 +33,7 @@ export const Selects = (props) => {
             fontSize: 12,
             colorTextQuaternary: "#6b7280cf",
             zIndexPopup: props.zIndexPopup || 1050,
-            //global token
+            controlHeight: parseInt(props.controlHeight) || 30,
           },
         },
       }}

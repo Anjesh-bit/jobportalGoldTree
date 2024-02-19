@@ -71,60 +71,117 @@ const dummyDataCompanyList = [
 ];
 
 const dashBoardData = [
-  { header: "Posted Jobs", subHeader: "Job Posted", key: "postedJobs" },
-  { header: "Live Jobs", subHeader: "Live Jobs", key: "liveJobs" },
   {
-    header: "Admin Approved",
-    subHeader: "Approved Posts",
-    key: "adminApproved",
-  },
-  {
-    header: "CVs Reviewed",
-    subHeader: [
+    key: "employee",
+    data: [
+      { header: "Posted Jobs", subHeader: "Job Posted", key: "postedJobs" },
+      { header: "Live Jobs", subHeader: "Live Jobs", key: "liveJobs" },
       {
-        cvsList: "CVs Reviewed",
-        key: "cvsR",
+        header: "Admin Approved",
+        subHeader: "Approved Posts",
+        key: "adminApproved",
       },
       {
-        cvsList: "CVs Not Reviewed",
-        key: "cvsN",
+        header: "CVs Reviewed",
+        subHeader: [
+          {
+            cvsList: "CVs Reviewed",
+            key: "cvsR",
+          },
+          {
+            cvsList: "CVs Not Reviewed",
+            key: "cvsN",
+          },
+        ],
+        key: "cvs",
+      },
+      {
+        header: "Total Applications",
+        subHeader: "Total Application",
+        key: "totalApplication",
+      },
+      {
+        header: "Job Status",
+        subHeader: [
+          {
+            status: "Live",
+            key: "live",
+          },
+          {
+            status: "Closed",
+            key: "closed",
+          },
+          {
+            status: "Status",
+            key: "status",
+          },
+        ],
+        key: "jobStatus",
+      },
+      {
+        header: "ShortListed",
+        subHeader: "Short Listed Interview",
+        key: "shortListed",
+      },
+      {
+        header: "Pending Count",
+        subHeader: "Pending Jobs",
+        key: "pendingCount",
+      },
+      {
+        header: "Rejected Count",
+        subHeader: "Rejected Applications",
+        key: "rejectedCount",
       },
     ],
-    key: "cvs",
   },
   {
-    header: "Total Applications",
-    subHeader: "Total Application",
-    key: "totalApplication",
-  },
-  {
-    header: "Job Status",
-    subHeader: [
+    key: "jobSeeker",
+    data: [
       {
-        status: "Live",
-        key: "live",
+        header: "Application Statistics",
+        subHeader: "Applied for jobs",
+        key: "appStats",
       },
       {
-        status: "Closed",
-        key: "closed",
+        header: "Resume Circulation Statistics",
+        subHeader: "0 Views by different companies",
+        key: "resCircu",
+      },
+      ,
+      { header: "My Resume", subHeader: "View My Resume", key: "liveJobs" },
+      {
+        header: "Appropriate For Me",
+        subHeader: "0 Hot Jobs",
+        key: "liveJobs",
       },
       {
-        status: "Status",
-        key: "status",
+        header: "Waiting Count",
+        subHeader: "Waiting For Interview",
+        key: "liveJobs",
       },
+      {
+        header: "My Profile",
+        subHeader: "My Profile",
+        key: "liveJobs",
+      },
+      {
+        header: "Short listed",
+        subHeader: "Short listed for Interviews",
+        key: "liveJobs",
+      },
+      {
+        header: "Pending Count",
+        subHeader: "Applications pending for companies",
+        key: "liveJobs",
+      },
+      {
+        header: "Rejected Count",
+        subHeader: "Applications rejected by companies",
+        key: "liveJobs",
+      },
+      { header: "Live Jobs", subHeader: "Live Jobs", key: "liveJobs" },
     ],
-    key: "jobStatus",
-  },
-  {
-    header: "ShortListed",
-    subHeader: "Short Listed Interview",
-    key: "shortListed",
-  },
-  { header: "Pending Count", subHeader: "Pending Jobs", key: "pendingCount" },
-  {
-    header: "Rejected Count",
-    subHeader: "Rejected Applications",
-    key: "rejectedCount",
   },
 ];
 
