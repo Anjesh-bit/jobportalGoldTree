@@ -6,7 +6,7 @@ const FeaturedJobs = () => {
   return (
     <div className="bg-[#3d2462] text-[#F5F5F5] flex items-center">
       <div className=" grid grid-cols-12 items-center">
-        <div className="flex flex-col gap-4 items-center lg:col-span-3 p-4 bg-[#6e46ae]">
+        <div className="flex flex-col gap-4 items-center lg:col-span-3 p-4 bg-gradient-to-r from-black">
           <DynamicTitle classNames={"font-bold text-5xl font-extrabold"}>
             Latest Featured Jobs
           </DynamicTitle>
