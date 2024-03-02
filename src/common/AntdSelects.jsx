@@ -6,7 +6,6 @@ export const Selects = (props) => {
   const tempRule = [
     {
       required: props.required,
-
       message: (
         <div className={`${props.prefixname ? "!mt-5" : "!mt-1"}`}>
           {props.valmessage?.charAt(0)?.toUpperCase() +

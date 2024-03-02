@@ -73,13 +73,11 @@ const applyOnlineOptions = [
 const ProfileInformation = () => {
   return (
     <div>
-      <AntdBreadCum array={["Employee", "Post Jobs"]} />
-
       <div className="grid grid-cols-12 gap-x-2">
         <div className="lg:col-span-4">
           <Inputs className="w-full" Label="Full Name" />
         </div>
-        <div className="lg:col-span-4 self-center mb-1">
+        <div className="lg:col-span-4">
           <DatePickers className="w-full" Label="Date Of Birth" />
         </div>
         <div className="lg:col-span-4">

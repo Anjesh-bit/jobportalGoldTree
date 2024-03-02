@@ -10,7 +10,6 @@ export const AntRadio = (props) => {
   const tempRule = [
     {
       required: props.required,
-
       message: `Please select ${props.label}`,
     },
   ];
@@ -24,7 +23,6 @@ export const AntRadio = (props) => {
         token: {
           colorPrimary: "#119888",
         },
-
         components: {
           Radio: {
             radioSize: props.radioSize || 18,
